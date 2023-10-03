@@ -1,0 +1,352 @@
+[{
+    "state": "Delhi",
+    "city": "Delhi",
+    "station": "site_5024",
+    "stationName": "Alipur, Delhi - DPCC",
+    "stationAqi":142,
+    "lat":28.79729231115735,
+    "long":77.13380788675579
+    
+  },
+  {
+    "state": "Delhi",
+    "city": "Delhi",
+    "station": "site_301",
+    "stationName": "Anand Vihar, Delhi - DPCC",
+    "stationAqi":160,
+    "lat":28.650818982086815, 
+    "long":77.30354392204832
+  },
+  {
+    "state": "Delhi",
+    "city": "Delhi",
+    "station": "site_1420",
+    "stationName": "Ashok Vihar, Delhi - DPCC",
+    "stationAqi":93,
+    "lat":28.69267466457495, 
+    "long":77.17527859929316
+  },
+  {
+    "state": "Delhi",
+    "city": "Delhi",
+    "station": "site_108",
+    "stationName": "Aya Nagar, Delhi - IMD",
+    "stationAqi":106,
+    "lat":28.472350894319778, 
+    "long":77.13259562539027
+  },
+  {
+    "state": "Delhi",
+    "city": "Delhi",
+    "station": "site_1560",
+    "stationName": "Bawana, Delhi - DPCC",
+    "stationAqi":175,
+    "lat":28.79356041739907, 
+    "long":77.047644644346
+  },
+  {
+    "state": "Delhi",
+    "city": "Delhi",
+    "station": "site_104",
+    "stationName": "Burari Crossing, Delhi - IMD",
+    "stationAqi":159,
+    "lat":28.728782221028183, 
+    "long":77.19777696360839
+  },
+  {
+    "state": "Delhi",
+    "city": "Delhi",
+    "station": "site_103",
+    "stationName": "CRRI Mathura Road, Delhi - IMD",
+    "stationAqi":130,
+    "lat":28.550673431456485, 
+    "long":77.27518526174909
+  },
+  {
+    "state": "Delhi",
+    "city": "Delhi",
+    "station": "site_5393",
+    "stationName": "Chandni Chowk, Delhi - IITM",
+    "stationAqi":100,
+    "lat":28.65920740304772, 
+    "long":77.22889071411684
+  },
+  {
+    "state": "Delhi",
+    "city": "Delhi",
+    "station": "site_118",
+    "stationName": "DTU, Delhi - CPCB",
+    "stationAqi":141,
+    "lat":28.7497472454755, 
+    "long":77.11889763847988
+  },
+  {
+    "state": "Delhi",
+    "city": "Delhi",
+    "station": "site_1421",
+    "stationName": "Dr. Karni Singh Shooting Range, Delhi - DPCC",
+    "stationAqi":132,
+    "lat":28.500037922674437, 
+    "long":77.26768548265292
+  },
+  {
+    "state": "Delhi",
+    "city": "Delhi",
+    "station": "site_1422",
+    "stationName": "Dwarka-Sector 8, Delhi - DPCC ",
+    "stationAqi":147,
+    "lat":28.572479609806408, 
+    "long":77.07086543286898
+  },
+  {
+    "state": "Delhi",
+    "city": "Delhi",
+    "station": "site_116",
+    "stationName": "East Arjun Nagar, Delhi - CPCB",
+    "stationAqi":100,
+    "lat":28.65675235234656, 
+    "long":77.29496857126648
+  },
+  {
+    "state": "Delhi",
+    "city": "Delhi",
+    "station": "site_106",
+    "stationName": "IGI Airport (T3), Delhi - IMD",
+    "stationAqi":145,
+    "lat":28.555654805981305, 
+    "long":77.08620733662005
+  },
+  {
+    "state": "Delhi",
+    "city": "Delhi",
+    "station": "site_114",
+    "stationName": "IHBAS, Dilshad Garden, Delhi - CPCB",
+    "stationAqi":185,
+    "lat":28.68101711533734, 
+    "long":77.30574875989979
+  },
+  {
+    "state": "Delhi",
+    "city": "Delhi",
+    "station": "site_117",
+    "stationName": "ITO, Delhi - CPCB",
+    "stationAqi":131,
+    "lat":28.627834710485473, 
+    "long":77.24331570593264
+  },
+  {
+    "state": "Delhi",
+    "city": "Delhi",
+    "station": "site_1423",
+    "stationName": "Jahangirpuri, Delhi - DPCC",
+    "stationAqi":165,
+    "lat":28.73000181166114, 
+    "long":77.16640109674496
+  },
+  {
+    "state": "Delhi",
+    "city": "Delhi",
+    "station": "site_1424",
+    "stationName": "Jawaharlal Nehru Stadium, Delhi - DPCC",
+    "stationAqi":84,
+    "lat":28.58332046809305, 
+    "long":77.23488853847445
+  },
+  {
+    "state": "Delhi",
+    "city": "Delhi",
+    "station": "site_109",
+    "stationName": "Lodhi Road, Delhi - IMD",
+    "stationAqi":121,
+    "lat":28.591276443716342, 
+    "long":77.22855892157965
+  },
+  {
+    "state": "Delhi",
+    "city": "Delhi",
+    "station": "site_1425",
+    "stationName": "Major Dhyan Chand National Stadium, Delhi - DPCC",
+    "stationAqi":127,
+    "lat":28.61324321694747, 
+    "long":77.23693566041433
+  },
+  {
+    "state": "Delhi",
+    "city": "Delhi",
+    "station": "site_122",
+    "stationName": "Mandir Marg, Delhi - DPCC",
+    "stationAqi":141,
+    "lat":28.6341961326815, 
+    "long":77.20100066752586
+  },
+  {
+    "state": "Delhi",
+    "city": "Delhi",
+    "station": "site_1561",
+    "stationName": "Mundka, Delhi - DPCC",
+    "stationAqi":224,
+    "lat":28.682733020392536, 
+    "long":77.03441771100924
+  },
+  {
+    "state": "Delhi",
+    "city": "Delhi",
+    "station": "site_115",
+    "stationName": "NSIT Dwarka, Delhi - CPCB",
+    "stationAqi":188,
+    "lat":28.608910147057543, 
+    "long":77.03517519924829
+  },
+  {
+    "state": "Delhi",
+    "city": "Delhi",
+    "station": "site_1427",
+    "stationName": "Najafgarh, Delhi - DPCC",
+    "stationAqi":125,
+    "lat":28.61280854482274, 
+    "long":76.98296476636035
+  },
+  {
+    "state": "Delhi",
+    "city": "Delhi",
+    "station": "site_1426",
+    "stationName": "Narela, Delhi - DPCC",
+    "stationAqi":151,
+    "lat":28.856714072110194, 
+    "long":77.08802627520495
+  },
+  {
+    "state": "Delhi",
+    "city": "Delhi",
+    "station": "site_1429",
+    "stationName": "Nehru Nagar, Delhi - DPCC",
+    "stationAqi":130,
+    "lat":28.5699768610698, 
+    "long":77.25031784764438
+  },
+  {
+    "state": "Delhi",
+    "city": "Delhi",
+    "station": "site_105",
+    "stationName": "North Campus, DU, Delhi - IMD",
+    "stationAqi":214,
+    "lat":28.685711639739907, 
+    "long":77.20690417434697
+  },
+  {
+    "state": "Delhi",
+    "city": "Delhi",
+    "station": "site_1428",
+    "stationName": "Okhla Phase-2, Delhi - DPCC",
+    "stationAqi":139,
+    "lat":28.536641253688018, 
+    "long":77.275256401917
+  },
+  {
+    "state": "Delhi",
+    "city": "Delhi",
+    "station": "site_1431",
+    "stationName": "Patparganj, Delhi - DPCC",
+    "stationAqi":155,
+    "lat":28.6404411410427, 
+    "long":77.3111436685996
+  },
+  {
+    "state": "Delhi",
+    "city": "Delhi",
+    "station": "site_125",
+    "stationName": "Punjabi Bagh, Delhi - DPCC",
+    "stationAqi":157,
+    "lat":28.663281834896843, 
+    "long":77.1233811794328
+  },
+  {
+    "state": "Delhi",
+    "city": "Delhi",
+    "station": "site_1563",
+    "stationName": "Pusa, Delhi - DPCC",
+    "stationAqi":175,
+    "lat":28.638702719714978, 
+    "long":77.1482594458903
+  },
+  {
+    "state": "Delhi",
+    "city": "Delhi",
+    "station": "site_107",
+    "stationName": "Pusa, Delhi - IMD",
+    "stationAqi":110,
+    "lat":28.638239350720742, 
+    "long":77.15791335269694
+  },
+  {
+    "state": "Delhi",
+    "city": "Delhi",
+    "station": "site_124",
+    "stationName": "R K Puram, Delhi - DPCC",
+    "stationAqi":165,
+    "lat":28.5675320607709, 
+    "long":77.16950345248212
+  },
+  {
+    "state": "Delhi",
+    "city": "Delhi",
+    "station": "site_1430",
+    "stationName": "Rohini, Delhi - DPCC",
+    "stationAqi":151,
+    "lat":28.73988063407518, 
+    "long":77.08452239088628
+  },
+  {
+    "state": "Delhi",
+    "city": "Delhi",
+    "station": "site_113",
+    "stationName": "Shadipur, Delhi - CPCB",
+    "stationAqi":164,
+    "lat":28.651836026456067, 
+    "long":77.15780335805417
+  },
+  {
+    "state": "Delhi",
+    "city": "Delhi",
+    "station": "site_119",
+    "stationName": "Sirifort, Delhi - CPCB",
+    "stationAqi":136,
+    "lat":28.553828546052436, 
+    "long":77.21246389380835
+  },
+  {
+    "state": "Delhi",
+    "city": "Delhi",
+    "station": "site_1432",
+    "stationName": "Sonia Vihar, Delhi - DPCC",
+    "stationAqi":148,
+    "lat":28.735071555308227, 
+    "long":77.25052596259505
+  },
+  {
+    "state": "Delhi",
+    "city": "Delhi",
+    "station": "site_1562",
+    "stationName": "Sri Aurobindo Marg, Delhi - DPCC",
+    "stationAqi":131,
+    "lat":28.538982765092477, 
+    "long":77.19894887472331
+  },
+  {
+    "state": "Delhi",
+    "city": "Delhi",
+    "station": "site_1435",
+    "stationName": "Vivek Vihar, Delhi - DPCC",
+    "stationAqi":190,
+    "lat":28.673353165772216, 
+    "long":77.31775364822717
+  },
+  {
+    "state": "Delhi",
+    "city": "Delhi",
+    "station": "site_1434",
+    "stationName": "Wazirpur, Delhi - DPCC",
+    "stationAqi":177,
+    "lat":28.697580596801284, 
+    "long":77.16040198086756
+  }]
