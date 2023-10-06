@@ -35,15 +35,25 @@ def create_graph(num_trip_ids=10):
     G = nx.DiGraph()
 
     count = 0
+    # Dictionary to track existing nodes
+    existing_nodes = {}
+    
     # Create nodes in the graph
     for _, row in trip_data.iterrows():
         stop_name = row['stop_name']
-        latitude = row['stop_lat']
-        longitude = row['stop_lon']
-        aqi = stop_aqi_mapping.get(stop_name, 0)  # Use 0 as default AQI if not found in AQI data
-        G.add_node(stop_name, latitude=latitude, longitude=longitude, aqi=aqi)
-        count += 1
-        print("Node Added : " + str(count))
+        
+        # Check if the node already exists
+        if stop_name not in existing_nodes:
+            latitude = row['stop_lat']
+            longitude = row['stop_lon']
+            aqi = stop_aqi_mapping.get(stop_name, 0)  # Use 0 as default AQI if not found in AQI data
+            G.add_node(stop_name, latitude=latitude, longitude=longitude, aqi=aqi)
+            existing_nodes[stop_name] = True
+            count += 1
+            print("Node Added : " + str(count))
+
+            if num_trip_ids is not None and count >= num_trip_ids:
+                break  # Break the loop after adding the specified number of nodes
 
     # Create edges in the graph based on trip data
     trip_groups = trip_data.groupby('trip_id')
@@ -63,7 +73,7 @@ def create_graph(num_trip_ids=10):
             print("Edge Added : " + str(count))
             
             if num_trip_ids is not None and count >= num_trip_ids:
-                break
+                break  # Break the loop after adding the specified number of edges
 
     G.add_edges_from(edges_to_add)
     print("Graph creation completed.")
