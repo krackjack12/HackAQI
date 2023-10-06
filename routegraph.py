@@ -2,6 +2,10 @@ import pandas as pd
 import networkx as nx
 import math
 import pickle
+import logging
+
+# Logs configuration 
+logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
 # Function to load or create the graph
 def load_or_create_graph():
@@ -9,16 +13,20 @@ def load_or_create_graph():
         with open('graph.pkl', 'rb') as file:
             G = pickle.load(file)
             print("Graph loaded from file.")
+            logging.info("Graph loaded from file.")
     except FileNotFoundError:
         G = create_graph()
         with open('graph.pkl', 'wb') as file:
             pickle.dump(G, file)
         print("Graph created and saved to file.")
+        logging.info("Graph created and saved to file.")
     return G
 
 # Function to create the graph
-def create_graph(num_trip_ids=10):
+def create_graph(num_trip_ids=4):
     print("Creating the graph...")
+    logging.info("Creating the graph...")
+
     # Load trip data
     trip_data = pd.read_csv('routesdata.csv')
     trip_data['stop_id'] = trip_data['stop_id'].astype(int)
@@ -51,14 +59,14 @@ def create_graph(num_trip_ids=10):
             existing_nodes[stop_name] = True
             count += 1
             print("Node Added : " + str(count))
+            logging.info("Node Added : " + str(count))
 
-            if num_trip_ids is not None and count >= num_trip_ids:
-                break  # Break the loop after adding the specified number of nodes
 
     # Create edges in the graph based on trip data
     trip_groups = trip_data.groupby('trip_id')
     edges_to_add = []
 
+    trip_count = 1
     count = 0
     for _, group in trip_groups:
         stops = group['stop_name'].tolist()
@@ -71,12 +79,17 @@ def create_graph(num_trip_ids=10):
             edges_to_add.append((source, target, {'distance': distance}))
             count += 1
             print("Edge Added : " + str(count))
-            
-            if num_trip_ids is not None and count >= num_trip_ids:
+            logging.info("Edge Added : " + str(count))
+
+            if num_trip_ids is not None and trip_count >= num_trip_ids:
                 break  # Break the loop after adding the specified number of edges
+        trip_count += 1
+        print("Number of trips completed : " + str(trip_count))
+
 
     G.add_edges_from(edges_to_add)
     print("Graph creation completed.")
+    logging.info("Graph creation completed.")
     return G
 
 # Define a function to find all stops in a path
