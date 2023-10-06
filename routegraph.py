@@ -4,8 +4,6 @@ import networkx.exception as nx_exception
 import math
 import pickle
 import logging
-import matplotlib.pyplot as plt
-import streamlit as st
 
 # Logs configuration 
 logging.basicConfig(filename='graph_creation.log', level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -145,9 +143,7 @@ def find_all_stops_in_path(G, path):
 
 # Define a function to find the shortest and cleanest path
 # Algorithm used : A* algorithm -> heuristic algorithm
-def find_shortest_and_cleanest_path(G, source, target):
-    print("Finding shortest and cleanest paths...")
-    
+def find_shortest_and_cleanest_path(G, source, target):    
     try:
         # Define a custom heuristic function for A* based on AQI (lower AQI is better)
         def heuristic(node, target):
@@ -162,18 +158,16 @@ def find_shortest_and_cleanest_path(G, source, target):
         
         # Calculate the distance along the shortest path
         shortest_distance = sum(haversine(G.nodes[shortest_path[i]]['latitude'], G.nodes[shortest_path[i]]['longitude'], 
-                                          G.nodes[shortest_path[i + 1]]['latitude'], G.nodes[shortest_path[i + 1]]['longitude'])
+                                        G.nodes[shortest_path[i + 1]]['latitude'], G.nodes[shortest_path[i + 1]]['longitude'])
                                 for i in range(len(shortest_path) - 1))
         
         # Calculate the distance along the cleanest path
         cleanest_distance = sum(haversine(G.nodes[cleanest_path[i]]['latitude'], G.nodes[cleanest_path[i]]['longitude'], 
-                                          G.nodes[cleanest_path[i + 1]]['latitude'], G.nodes[cleanest_path[i + 1]]['longitude'])
+                                        G.nodes[cleanest_path[i + 1]]['latitude'], G.nodes[cleanest_path[i + 1]]['longitude'])
                                 for i in range(len(cleanest_path) - 1))
         
         avg_aqi_shortest = sum(G.nodes[node]['aqi'] for node in shortest_path) / len(shortest_path)
         avg_aqi_cleanest = sum(G.nodes[node]['aqi'] for node in cleanest_path) / len(cleanest_path)
-        
-        print("Paths found.")
         
         return {
             'shortest_path': shortest_path,
@@ -196,10 +190,23 @@ def find_shortest_and_cleanest_path(G, source, target):
             'avg_aqi_shortest': 0.0,  # Default to 0 AQI
             'avg_aqi_cleanest': 0.0   # Default to 0 AQI
         }
+    except nx_exception.NodeNotFound:
+        print(f"Either {source} or {target} is not in Graph G.")
+        logging.info(f"No path between {source} and {target}.")
+        # Set default values when no path is found
+        return {
+            'shortest_path': [],
+            'cleanest_path': [],
+            'shortest_distance': 0.0,  # Default to 0 distance
+            'cleanest_distance': 0.0,  # Default to 0 distance
+            'avg_aqi_shortest': 0.0,  # Default to 0 AQI
+            'avg_aqi_cleanest': 0.0   # Default to 0 AQI
+        }
 
+'''
 # Example usage
-source_stop = "Prem Bari Pull"
-target_stop = "AIIMS"
+source_stop = "Health Centre"
+target_stop = "Dhansa"
 
 # Load or create the graph
 G = load_or_create_graph()
@@ -218,3 +225,4 @@ print("Shortest Distance:", result['shortest_distance'])
 print("Cleanest Distance:", result['cleanest_distance'])
 print("Average AQI for Shortest Path:", result['avg_aqi_shortest'])
 print("Average AQI for Cleanest Path:", result['avg_aqi_cleanest'])
+'''
