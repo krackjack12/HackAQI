@@ -5,7 +5,7 @@ import pickle
 import logging
 
 # Logs configuration 
-logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+logging.basicConfig(filename='graph_creation.log', level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
 # Function to load or create the graph
 def load_or_create_graph():
@@ -14,12 +14,15 @@ def load_or_create_graph():
             G = pickle.load(file)
             print("Graph loaded from file.")
             logging.info("Graph loaded from file.")
+
     except FileNotFoundError:
         G = create_graph()
         with open('graph.pkl', 'wb') as file:
             pickle.dump(G, file)
+        
         print("Graph created and saved to file.")
         logging.info("Graph created and saved to file.")
+
     return G
 
 # Function to create the graph
