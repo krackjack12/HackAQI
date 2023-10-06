@@ -4,3 +4,4 @@ routesdata.csv
 GTFS
 stopsdata_calculated.csv
 __pycache__
+graph.pkl
