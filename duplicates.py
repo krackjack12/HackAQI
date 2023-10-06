@@ -1,4 +1,4 @@
-import pandas as pd
+'''import pandas as pd
 
 # Replace 'input.csv' with the path to your CSV file.
 csv_file_path = 'routesdata.csv'
@@ -16,3 +16,14 @@ df_cleaned.to_csv(output_csv_file, index=False)
 
 # Print the cleaned DataFrame (optional).
 print(df_cleaned)
+
+'''
+import pandas as pd
+
+# Load the CSV file
+data = pd.read_csv('routesdata.csv')
+
+# Replace 'trip_id' with the attribute you want to count unique values for
+unique_values_count = data['trip_id'].nunique()
+
+print("Number of unique values for 'trip_id':", unique_values_count)
