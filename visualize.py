@@ -1,6 +1,5 @@
 import streamlit as st
 import folium
-import pandas as pd
 import networkx as nx
 from streamlit_folium import folium_static
 import pickle
@@ -23,7 +22,7 @@ result = find_shortest_and_cleanest_path(G, source_node, target_node)
 cleanest_path = result['cleanest_path']
 
 # Create a Folium map
-m = folium.Map(location=[28.6139, 77.2090], zoom_start=12)
+m = folium.Map(location=[28.6139, 77.2090], zoom_start=10)
 
 # Clear the map to remove any previous edges
 m._repr_html_ = m.get_root().render()
@@ -70,6 +69,9 @@ for edge in G.edges(data=True):
 
 # Display the Folium map
 folium_static(m)
+
+# Clear the map to remove any previous edges
+m._repr_html_ = m.get_root().render()
 
 # Display path information for the cleanest path
 st.write(f"Cleanest Path from {source_node} to {target_node}: {cleanest_path}")
