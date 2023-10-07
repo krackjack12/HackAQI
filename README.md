@@ -21,8 +21,10 @@ To achieve this goal, we follow the following methodology:
 5. Utilize the A* algorithm with AQI as the parameter for the greedy algorithm.
 6. Create visualizations for each stop showing the path, nodes, cleanest route, and the average AQI value for that path.
 
-For a visual representation of the cleanest route and the process flow, check the images below.
+Process Flow Chart : 
 
 ![Process Flow](Process_Flow.png)
+
+Streamlit App visualizing the cleanest path :
 
 ![Streamlit App with Folium Map](Streamlit_App_Screenshot.png)
