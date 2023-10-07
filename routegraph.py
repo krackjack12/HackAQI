@@ -203,7 +203,7 @@ def find_shortest_and_cleanest_path(G, source, target):
             'avg_aqi_cleanest': 0.0   # Default to 0 AQI
         }
 
-'''
+
 # Example usage
 source_stop = "Health Centre"
 target_stop = "Dhansa"
@@ -225,4 +225,3 @@ print("Shortest Distance:", result['shortest_distance'])
 print("Cleanest Distance:", result['cleanest_distance'])
 print("Average AQI for Shortest Path:", result['avg_aqi_shortest'])
 print("Average AQI for Cleanest Path:", result['avg_aqi_cleanest'])
-'''
