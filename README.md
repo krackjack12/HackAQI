@@ -23,6 +23,6 @@ To achieve this goal, we follow the following methodology:
 
 For a visual representation of the cleanest route and the process flow, check the images below.
 
-![Process Flow](/Users/krishjoshi/Desktop/Process Flow.png)
+![Process Flow](Process_Flow.png)
 
-![Streamlit App with Folium Map](/Users/krishjoshi/Desktop/Streamlit App Screenshot.png)
+![Streamlit App with Folium Map](Streamlit_App_Screenshot.png)
